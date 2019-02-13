@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button><img :src="this.iconSrc"></img></button>
+    <button :aria-label="this.altText"><img :src="this.iconSrc" :title="this.altText"></img></button>
   </div>
 </template>
 <script lang="ts">
@@ -14,6 +14,7 @@ import IconButton from '@/components/base/IconButton.vue';
  })
 export default class HomePage extends Vue {
   @Prop(String) public icon!: string;
+  @Prop(String) public altText!: string;
 
   get iconSrc() {
     return require(`@/assets/icons/${this.icon}.svg`);
@@ -21,3 +22,10 @@ export default class HomePage extends Vue {
 
 }
 </script>
+
+<style scoped>
+button{
+  border: none;
+  background-color: inherit;
+}
+</style>
