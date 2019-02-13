@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="navbar">
         <h1 class="app-title navbar-right">Transcriptions</h1>
-        <IconButton icon="fetch" altText="Get Tasks"/>
+        <IconButton icon="fetch" altText="Get Tasks" @click="loadTranscripts"/>
         <IconButton icon="upload" altText="Upload Tasks"/>
       </div>
     </div>
@@ -13,13 +13,16 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import IconButton from '@/components/base/IconButton.vue'
+import { Action } from 'vuex-class'
 
 @Component({
 		components: {
 			IconButton,
 		},
  })
-export default class AppHeader extends Vue {}
+export default class AppHeader extends Vue {
+ @Action private loadTranscripts
+}
 
 </script>
 

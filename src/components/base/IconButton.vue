@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button :aria-label="this.altText">
+    <button :aria-label="this.altText" @click="$emit('click')">
       <img :src="this.iconSrc" :title="this.altText">
     </button>
   </div>
@@ -19,7 +19,6 @@ export default class HomePage extends Vue {
 	@Prop(String) public altText!: string
 
 	get iconSrc() {
-		console.log('he')
 		return require(`@/assets/icons/${this.icon}.svg`)
 	}
 }
