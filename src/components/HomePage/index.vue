@@ -7,16 +7,16 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import IconButton from '@/components/base/IconButton.vue';
-import AppHeader from './AppHeader.vue';
+import { Component, Vue } from 'vue-property-decorator'
+import IconButton from '@/components/base/IconButton.vue'
+import AppHeader from './AppHeader.vue'
 
 
 @Component({
-   components: {
-     AppHeader,
-     IconButton,
-   },
+		components: {
+			AppHeader,
+			IconButton,
+		},
  })
 export default class HomePage extends Vue {}
 </script>

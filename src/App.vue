@@ -5,27 +5,26 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import HomePage from './components/HomePage/index.vue';
-import IconButton from '@/components/base/IconButton.vue';
-
+import { Component, Vue } from 'vue-property-decorator'
+import HomePage from './components/HomePage/index.vue'
+import IconButton from '@/components/base/IconButton.vue'
 
 @Component({
-   components: {
-     HomePage,
-     IconButton,
-   },
+	components: {
+		HomePage,
+		IconButton,
+	},
 })
 export default class App extends Vue {}
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans");
 
 #app {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 10px;
-  font-color: #778195;
+  color: #778195;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -33,11 +32,11 @@ export default class App extends Vue {}
   margin-top: 60px;
 }
 
-body{
+body {
   background-color: #f6f7f8;
 }
 
-.wrapper{
+.wrapper {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
