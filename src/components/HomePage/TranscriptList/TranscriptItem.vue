@@ -2,12 +2,12 @@
   <div @mouseenter="hover=true" @mouseleave="hover=false">
     <div class="item-box wrapper">
       <CheckboxInput/>
-      <IconButton icon="person" altText="person"/>
+      <IconButton icon="person"/>
       <div>
         <h2 class="item-title">{{ item.voice }}</h2>
         <p class="item-content">{{ item.text }}</p>
       </div>
-      <IconButton v-if="hover" icon="delete" altText="Delete" class="del-icon"/>
+      <IconButton v-if="hover" icon="delete" altText="Delete" class="del-icon" @click="deleteItem"/>
     </div>
   </div>
 </template>
@@ -27,6 +27,10 @@ export default class TranscriptItem extends Vue {
 	@Prop(Object) private item
 
 	private hover = false
+
+	private deleteItem() {
+		this.$store.dispatch('deleteTranscript', this.item.id)
+	}
 }
 </script>
 
