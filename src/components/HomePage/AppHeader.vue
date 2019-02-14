@@ -3,8 +3,13 @@
     <div class="wrapper">
       <div class="navbar">
         <h1 class="app-title navbar-title">Transcriptions</h1>
-        <IconButton icon="fetch" altText="Get Tasks" @click="loadTranscripts"/>
-        <IconButton icon="upload" altText="Upload Tasks"/>
+        <IconButton icon="fetch" altText="Get Transcripts" @click="loadTranscripts" v-if="!editing"/>
+        <IconButton icon="upload" altText="Upload Transcripts" @click="uploadTranscripts" v-if="!editing"/>
+        
+        <div v-if="editing" title="To sending invalid data, this is disabled">
+          Can't get / upload during editing
+        </div>
+        
       </div>
     </div>
   </div>
@@ -13,15 +18,17 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import IconButton from '@/components/base/IconButton.vue'
-import { Action } from 'vuex-class'
+import { Action, Getter } from 'vuex-class'
 
 @Component({
-		components: {
+	components: {
 			IconButton,
-		},
+	},
  })
 export default class AppHeader extends Vue {
- @Action private loadTranscripts
+	@Action private loadTranscripts
+	@Action private uploadTranscripts
+	@Getter private editing
 }
 
 </script>

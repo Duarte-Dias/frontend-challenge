@@ -19,15 +19,19 @@ export default class App extends Vue {}
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans");
 
-#app {
+#app, input, button {
   font-family: "Montserrat", sans-serif;
-  font-size: 10px;
+  font-size: 15px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+
+#app {
+  margin-top: 60px;
+  text-align: center;
+}
+
 
 body {
   background-color: #f6f7f8;
@@ -38,4 +42,5 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 </style>

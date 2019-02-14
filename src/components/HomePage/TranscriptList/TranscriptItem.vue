@@ -4,8 +4,8 @@
       <CheckboxInput/>
       <IconButton icon="person"/>
       <div>
-        <h2 class="item-title">{{ item.voice }}</h2>
-        <p class="item-content">{{ item.text }}</p>
+        <h2 class="item-title" @click="startEdit">{{ item.voice }}</h2>
+        <p class="item-content" @click="startEdit">{{ item.text }}</p>
       </div>
       <IconButton v-if="hover" icon="delete" altText="Delete" class="del-icon" @click="deleteItem"/>
     </div>
@@ -28,6 +28,10 @@ export default class TranscriptItem extends Vue {
 
 	private hover = false
 
+	private startEdit() {
+		this.$store.dispatch('startEdit', this.item.id)
+	}
+
 	private deleteItem() {
 		this.$store.dispatch('deleteTranscript', this.item.id)
 	}
@@ -35,35 +39,12 @@ export default class TranscriptItem extends Vue {
 </script>
 
 <style lang="scss" scoped>
-.item-box{
-  text-align: left;
-  display: flex;
-  padding-bottom: 50px;
-}
-
-.item-box > * {
-  margin: 0 4px 0 4px;
-}
+@import './itemstyle.scss';
 
 
 .del-icon{
   margin-left: auto;
   width: 10px; //To avoid wrap on hover
-}
-
-
-.item-title {
-  font-family: MontSerrat, sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  color:#566074;
-  margin: 0;
-}
-
-.item-content {
-  font-family: OpenSans, sans-serif;
-  font-size: 16px;
-  color: #778195;
 }
 </style>
 

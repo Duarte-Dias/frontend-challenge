@@ -1,0 +1,26 @@
+.item-box{
+    text-align: left;
+		display: flex;
+		
+		padding-bottom: 50px;
+  }
+  
+.item-box > * {
+	margin: 0 4px 0 4px;
+}
+
+.item-title {
+	display: block;
+	font-family: MontSerrat, sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	color:#566074;
+	margin: 0;
+}
+
+.item-content {
+	display: block;
+	font-family: OpenSans, sans-serif;
+	font-size: 16px;
+	color: #778195;
+}
