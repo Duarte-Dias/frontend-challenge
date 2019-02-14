@@ -30,6 +30,8 @@ export default class App extends Vue {}
 #app {
   margin-top: 60px;
   text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 
