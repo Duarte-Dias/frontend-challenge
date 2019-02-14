@@ -1,7 +1,7 @@
 <template>
   <div>
 		<div v-for="t in transcripts" :key="t.id">
-    	<TranscriptItem/>
+    	<TranscriptItem :item="t"/>
 		</div>
   </div>
 </template>

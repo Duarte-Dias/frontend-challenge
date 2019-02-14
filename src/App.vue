@@ -22,7 +22,6 @@ export default class App extends Vue {}
 #app {
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
-  color: #778195;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
