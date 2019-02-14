@@ -2,7 +2,7 @@
   <div class="headerbox">
     <div class="wrapper">
       <div class="navbar">
-        <h1 class="app-title navbar-right">Transcriptions</h1>
+        <h1 class="app-title navbar-title">Transcriptions</h1>
         <IconButton icon="fetch" altText="Get Tasks" @click="loadTranscripts"/>
         <IconButton icon="upload" altText="Upload Tasks"/>
       </div>
@@ -31,6 +31,7 @@ export default class AppHeader extends Vue {
   background-color: #fff;
   padding: 30px;
   border: 2px solid #ddd;
+  margin-bottom: 100px;
 }
 
 .app-title {
@@ -48,8 +49,9 @@ export default class AppHeader extends Vue {
   margin: 0 10px 0 10px; //Default margin for navbar items
 }
 
-.navbar-right{
+.navbar-title{
   margin-right: auto;
+  margin-left: 0;
 }
 
 </style>

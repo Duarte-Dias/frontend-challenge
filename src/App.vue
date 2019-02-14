@@ -7,12 +7,10 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import HomePage from './components/HomePage/index.vue'
-import IconButton from '@/components/base/IconButton.vue'
 
 @Component({
 	components: {
 		HomePage,
-		IconButton,
 	},
 })
 export default class App extends Vue {}
@@ -37,7 +35,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1400px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }

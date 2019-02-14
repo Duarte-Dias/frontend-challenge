@@ -1,26 +1,21 @@
 <template>
   <div>
     <AppHeader/>
-    <IconButton icon="person" altText=""/>
+    <TranscriptList/>
   </div>
-
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import IconButton from '@/components/base/IconButton.vue'
 import AppHeader from './AppHeader.vue'
-
+import TranscriptList from './TranscriptList/index.vue'
 
 @Component({
 		components: {
 			AppHeader,
-			IconButton,
+			TranscriptList,
 		},
  })
 export default class HomePage extends Vue {}
 </script>
 
-<style lang="scss" scoped>
-
-</style>

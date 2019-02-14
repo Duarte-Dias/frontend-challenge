@@ -7,14 +7,9 @@
 </template>
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator'
-import IconButton from '@/components/base/IconButton.vue'
 
-@Component({
-	components: {
-		IconButton,
-	},
-})
-export default class HomePage extends Vue {
+@Component({})
+export default class IconButton extends Vue {
 	@Prop(String) public icon!: string
 	@Prop(String) public altText!: string
 
