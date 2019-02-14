@@ -1,34 +1,18 @@
-# frontend-challenge
+# Unbabel Front-end Challenge
 
-## Project setup
-```
-npm install
-```
+This is my submition to the Unbabel Front-End Challenge.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+The challenge consisted of building a **Todo** type of app for transcriptions, getting the data from this endpoint: http://www.mocky.io/v2/5ae1c5792d00004d009d7e5c
 
-### Compiles and minifies for production
-```
-npm run build
-```
+You can **learn more** about it [here](https://github.com/Unbabel/frontend-challenge/)
 
-### Run your tests
-```
-npm run test
-```
+#
+### Built with:
+* [Vue.js](https://vuejs.org), the progressive web framework;
+* [TypeScript](https://www.typescriptlang.org), Javascript that scales;
+* [Vue-class-component](www.github.com/vuejs/vue-class-component) for decluttered class based components;
+* [Vue-property-decorator](https://github.com/kaorun343/vue-property-decorator) for general class decorators;
+* [Vuex](https://github.com/vuejs/vuex) for state management;
+* [Vuex-class](https://github.com/ktsn/vuex-class) for vuex bindings in components;
+* [Axios](https://github.com/axios/axios) for HTTP requests;
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
