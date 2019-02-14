@@ -31,7 +31,7 @@ export default class CheckboxInput extends Vue {}
   height: 16px;
 	width: 16px;
 
-	border: 1px solid #859EFF;
+	border: 2px solid #859EFF;
 	border-radius: 3px;
 
 	&:after {
