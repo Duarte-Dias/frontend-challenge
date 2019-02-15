@@ -39,13 +39,7 @@ export default class TranscriptEdit extends Vue {
 		return (this.item.voice !== '') && (this.item.text !== '')
 	}
 
-	// To reset data, editData has a template, if item is empty, values will be undef
-	private editDataTemplate = {
-		voice: this.item.voice,
-		text: this.item.text,
-		id: this.item.id,
-	}
-	private editData = Object.assign({}, this.editDataTemplate) // Clone
+	private editData = Object.assign({}, this.item) // Clone
 
 	private cancelEdit() {
 		// If it isn't valid (just added), don't keep it
