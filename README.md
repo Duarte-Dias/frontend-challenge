@@ -10,7 +10,7 @@ You can **learn more** about it [here](https://github.com/Unbabel/frontend-chall
 ### Built with:
 * [Vue.js](https://vuejs.org), the progressive web framework;
 * [TypeScript](https://www.typescriptlang.org), Javascript that scales;
-* [Vue-class-component](www.github.com/vuejs/vue-class-component) for decluttered class based components;
+* [Vue-class-component](https://www.github.com/vuejs/vue-class-component) for decluttered class based components;
 * [Vue-property-decorator](https://github.com/kaorun343/vue-property-decorator) for general class decorators;
 * [Vuex](https://github.com/vuejs/vuex) for state management;
 * [Vuex-class](https://github.com/ktsn/vuex-class) for vuex bindings in components;
