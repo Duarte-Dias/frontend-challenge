@@ -1,8 +1,8 @@
 <template>
   <div class="headerbox">
     <div class="wrapper">
-      <div class="navbar">
-        <h1 class="app-title navbar-title">Transcriptions</h1>
+      <div class="headerbar">
+        <h1 class="app-title headerbar-title">Transcriptions</h1>
         <IconButton icon="fetch" altText="Get Transcripts" @click="loadTranscripts" v-if="!editing"/>
         <IconButton icon="upload" altText="Upload Transcripts" @click="uploadTranscripts" v-if="!editing"/>
         
@@ -48,15 +48,15 @@ export default class AppHeader extends Vue {
   text-align: left;
 }
 
-.navbar{
+.headerbar{
   display: flex;
 }
 
-.navbar > * {
-  margin: 0 10px 0 10px; //Default margin for navbar items
+.headerbar > * {
+  margin: 0 10px 0 10px; //Default margin for headerbar items
 }
 
-.navbar-title{
+.headerbar-title{
   margin-right: auto;
   margin-left: 0;
 }
