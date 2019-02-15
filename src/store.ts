@@ -17,19 +17,16 @@ export default new Vuex.Store({
 			state.transcripts = {}
 		},
 		DEL_TRANSCRIPT(state, id) {
-
 			if (state.transcripts[id]) {
 				Vue.delete(state.transcripts, id)
 			} else {
 				throw new Error('couldnt find transcript to delete')
 			}
 		},
-
 		START_EDIT(state, id) {
 			state.editingTranscript = id
 		},
 		CLEAR_EDIT(state) {
-
 			state.editingTranscript = null
 		},
 	},
